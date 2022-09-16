@@ -89,7 +89,9 @@ def convolve(x: float, kernel: float[]) -> float:
     return sum([x[t-i] * kernel[i] for i in range(K)])
 ```
 
-For Python compatibility, the FL parser also accepts standard numpy syntax for array manipulation.
+### Numpy compatibility
+
+The FL parser accepts standard numpy syntax for math functions and array manipulation as an alternative syntax. By using this syntax and not using the FL-specific features such as strict type annotations and statefulness, it's possible to write code that can bere used both in FL and Python environments.
 
 ## Examples
 
