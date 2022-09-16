@@ -91,7 +91,7 @@ def convolve(x: float, kernel: float[]) -> float:
 
 ### Numpy compatibility
 
-The FL parser accepts standard numpy syntax for math functions and array manipulation as an alternative syntax. By using this syntax and not using the FL-specific features such as strict type annotations and statefulness, it's possible to write code that can bere used both in FL and Python environments.
+The FL parser accepts standard numpy syntax for math functions and array manipulation as an alternative syntax. By using this syntax and not using the FL-specific features such as strict type annotations and statefulness, it's possible to write code that can be used both in FL and Python environments.
 
 ## Examples
 
