@@ -28,7 +28,7 @@ def dense(x, N):
 
 ### Synchronous
 
-FL is synchronous, which means that all computations are synchronized with a global clock, typically the arrival of new input. The entire model is executed for every input or time step, so there is no need to loop over inputs as in Python. Statefulness is introduced by using the delay operator `[t-n]`, which refers to a variable value at a previous time step. `t` is a keyword in FL and refers to the number of time steps since the beginning of data.
+FL is synchronous, which means that all computations are synchronized with a global clock, typically the arrival of new input. The entire model is executed for every sample or time step, so there is no need to loop over samples or time steps as in Python. Statefulness is introduced by using the delay operator `[t-n]`, which refers to a variable value at a previous time step. `t` is a keyword in FL and refers to the number of time steps since the beginning of data.
 
 ```python
 def lowpass(x, FC, TS):
